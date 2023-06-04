@@ -1,0 +1,110 @@
+
+
+
+
+.discount{
+    margin-left: 30%;
+    color: white;
+
+}
+
+
+.fa-brands{
+    color: white;
+}
+
+.navbar{
+    height: 33px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.container{
+    justify-content: space-between;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.nav-links{
+    font-family: sans-serif;
+    padding: 5px 18px;
+}
+
+a{
+    text-decoration: none;
+    color: #3c4043;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    font: 15px Montserrat, sans-serif;
+}
+
+
+
+
+
+.search-btn{
+    width: 35%;
+}
+
+//search button scc
+ .form-control {
+    padding-left: 2.375rem;
+    border: 1px solid;
+    border-radius: 2px;
+
+}
+ .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+
+
+p {
+    position: absolute;
+    top: 0;
+    border-radius: 5px;
+    right: 410px;
+    z-index: 2;
+    border: none;
+    top: 35px;
+    height: 35px;
+    cursor: pointer;
+    color: white;
+    background-color: #1e90ff;
+    transform: translateX(2px);
+    }
+
+
+//end seearch button css
+
+
+@media only screen and (max-width: 600px) {
+    .navbar-brand{
+        display: none;
+    }
+    .navbar{
+        height: 50px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .discount{
+        margin-left: 8%;
+        color: white;
+    
+    }
+    .row{
+        display: none;
+    }
+
+
+  }
