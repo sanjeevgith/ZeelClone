@@ -9,12 +9,13 @@
 }
 
 
+
 .fa-brands{
     color: white;
 }
 
 .navbar{
-    height: 33px;
+    height: 50px;
     margin-left: 5px;
     margin-right: 5px;
 }
@@ -69,23 +70,70 @@ a{
 
 
 
-p {
-    position: absolute;
-    top: 0;
-    border-radius: 5px;
-    right: 410px;
-    z-index: 2;
-    border: none;
-    top: 35px;
-    height: 35px;
-    cursor: pointer;
-    color: white;
-    background-color: #1e90ff;
-    transform: translateX(2px);
-    }
-
-
 //end seearch button css
+
+
+.upper-links {
+    display: inline-block;
+    padding: 0 11px;
+    line-height: 23px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0;
+    color: inherit;
+    border: none;
+    outline: none;
+    font-size: 17px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 0px;
+}
+
+
+
+.dropdown:hover .links {
+    color: #000;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    display: none;
+    background-color: #fff;
+    color: #333;
+    left: 0px;
+    border: 0;
+    border-radius: 0;
+    box-shadow: 0 4px 8px -3px #555454;
+    margin: 0;
+    padding: 0px;
+}
+
+.links {
+    color: #fff;
+    text-decoration: none;
+}
+
+.links:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.profile-links {
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid #e9e9e9;
+    box-sizing: border-box;
+    display: block;
+    padding: 0 11px;
+    line-height: 23px;
+}
 
 
 @media only screen and (max-width: 600px) {
