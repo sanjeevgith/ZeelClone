@@ -5,7 +5,8 @@
 .discount{
     margin-left: 30%;
     color: white;
-
+    font: inherit;
+    font-size: large;
 }
 
 
@@ -70,6 +71,11 @@ a{
 
 
 
+ :hover .nav-btn{
+    background-color: rgb(223, 222, 222);
+
+}
+
 //end seearch button css
 
 
@@ -109,7 +115,7 @@ a{
     color: #333;
     left: 0px;
     border: 0;
-    border-radius: 0;
+    border-radius: 5px;
     box-shadow: 0 4px 8px -3px #555454;
     margin: 0;
     padding: 0px;
@@ -128,11 +134,14 @@ a{
 .profile-links {
     font-size: 12px;
     font-family: 'Roboto', sans-serif;
-    border-bottom: 1px solid #e9e9e9;
+    // border-bottom: 1px solid #e9e9e9;
     box-sizing: border-box;
     display: block;
-    padding: 0 11px;
+    padding-top: 11px;
+    padding-bottom: 5px;
+    padding-left: 11px;
     line-height: 23px;
+    border-radius: 5px;
 }
 
 
@@ -148,6 +157,7 @@ a{
     .discount{
         margin-left: 8%;
         color: white;
+        font-size: small;
     
     }
     .row{

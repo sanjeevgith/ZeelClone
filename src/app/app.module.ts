@@ -7,6 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { SearchinputComponent } from './components/searchinput/searchinput.component';
+import { ProductscategorywiseComponent } from './components/productscategorywise/productscategorywise.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SearchinputComponent } from './components/searchinput/searchinput.compo
     HeaderComponent,
     FooterComponent,
     DashboardComponent,
-    SearchinputComponent
+    SearchinputComponent,
+    ProductscategorywiseComponent
   ],
   imports: [
     BrowserModule,
