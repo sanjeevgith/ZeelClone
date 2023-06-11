@@ -132,6 +132,10 @@ a {
   border-radius: 5px;
 }
 
+*:focus {
+  outline: 0;
+}
+
 #androidnavbar {
   display: none;
 }
@@ -160,6 +164,13 @@ a {
   #androidnavbar {
     display: block;
   }
+  .svg:focus {
+    outline: 0;
+  }
+  *:focus {
+    outline: 0;
+  }
+
 
   #searchinput{
      width: 100%;

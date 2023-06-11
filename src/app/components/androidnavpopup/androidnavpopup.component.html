@@ -11,22 +11,29 @@
             <button style="border: none;background-color: white;" type="button" (click)="closePopup()"><span
                     style="color: rgb(74, 170, 218);">&times;</span></button>
         </span>
+        <span id="backarrow" style="padding-right: 95%;border: none;">
+            <svg (click)="backbtn()" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+              </svg>
+            <!-- <button style="border: none;background-color: white;" type="button" (click)="backbtn()"><span
+                    style="color: rgb(74, 170, 218);">&times;</span></button> -->
+        </span>
 
 
         <div class="row" id="rowbody">
             <div class="list">
-                <p><b>Men</b><span style="margin-left: 80%;"><svg (click)="men()" xmlns="http://www.w3.org/2000/svg" width="16"
-                            height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                <p><b>Men</b><span style="margin-left: 80%;"><svg (click)="men()" xmlns="http://www.w3.org/2000/svg"
+                            width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
                             <path
                                 d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z" />
                         </svg></span></p>
-                <p><b>Women</b><span style="margin-left: 72%;"><svg (click)="women()" xmlns="http://www.w3.org/2000/svg" width="16"
-                            height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                <p><b>Women</b><span style="margin-left: 72%;"><svg (click)="women()" xmlns="http://www.w3.org/2000/svg"
+                            width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
                             <path
                                 d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z" />
                         </svg></span></p>
-                <p><b>Kids</b><span style="margin-left: 79%;"><svg (click)="kid()" xmlns="http://www.w3.org/2000/svg" width="16"
-                            height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                <p><b>Kids</b><span style="margin-left: 79%;"><svg (click)="kid()" xmlns="http://www.w3.org/2000/svg"
+                            width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
                             <path
                                 d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z" />
                         </svg></span></p>

@@ -3,6 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ProductscategorywiseComponent } from './components/productscategorywise/productscategorywise.component';
 import { AndroidnavpopupComponent } from './components/androidnavpopup/androidnavpopup.component';
+import { LoginComponent } from './components/login/login.component';
+import { SignupComponent } from './components/signup/signup.component';
+import { ShoppingcartComponent } from './components/shoppingcart/shoppingcart.component';
 
 const routes: Routes = [
   {
@@ -21,6 +24,18 @@ const routes: Routes = [
   {
     path:"androidnavbar",
     component:AndroidnavpopupComponent
+  },
+  {
+    path:"login",
+    component:LoginComponent
+  },
+  {
+    path:"signup",
+    component:SignupComponent
+  },
+  {
+    path:"cart",
+    component:ShoppingcartComponent
   }
 ];
 

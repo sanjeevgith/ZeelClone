@@ -9,6 +9,9 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { SearchinputComponent } from './components/searchinput/searchinput.component';
 import { ProductscategorywiseComponent } from './components/productscategorywise/productscategorywise.component';
 import { AndroidnavpopupComponent } from './components/androidnavpopup/androidnavpopup.component';
+import { LoginComponent } from './components/login/login.component';
+import { SignupComponent } from './components/signup/signup.component';
+import { ShoppingcartComponent } from './components/shoppingcart/shoppingcart.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { AndroidnavpopupComponent } from './components/androidnavpopup/androidna
     DashboardComponent,
     SearchinputComponent,
     ProductscategorywiseComponent,
-    AndroidnavpopupComponent
+    AndroidnavpopupComponent,
+    LoginComponent,
+    SignupComponent,
+    ShoppingcartComponent
   ],
   imports: [
     BrowserModule,
