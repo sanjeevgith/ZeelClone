@@ -8,6 +8,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { SearchinputComponent } from './components/searchinput/searchinput.component';
 import { ProductscategorywiseComponent } from './components/productscategorywise/productscategorywise.component';
+import { AndroidnavpopupComponent } from './components/androidnavpopup/androidnavpopup.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ProductscategorywiseComponent } from './components/productscategorywise
     FooterComponent,
     DashboardComponent,
     SearchinputComponent,
-    ProductscategorywiseComponent
+    ProductscategorywiseComponent,
+    AndroidnavpopupComponent
   ],
   imports: [
     BrowserModule,

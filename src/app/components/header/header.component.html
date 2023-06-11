@@ -5,7 +5,7 @@
         <a class="navbar-brand" href="#"><i style="font-size: large;" class="fa-brands fa-instagram"></i></a>
         <a class="navbar-brand" href="#"><i style="font-size: large;" class="fa-brands fa-youtube"></i></a>
         <div class="navbar-collapse" id="navbarText">
-            <span class="discount" >
+            <span class="discount">
                 Use Discount Code "<strong>ZEEL10</strong>" &amp; Get 10% OFF
             </span>
         </div>
@@ -14,7 +14,7 @@
 
 
 <div class="container-flex">
-    <div class="row" style="margin-left: 5px;margin-right: 5px;background-color:rgb(238, 237, 237);">
+    <div class="row" id="winnavbar" style="margin-left: 5px;margin-right: 5px;background-color:rgb(238, 237, 237);">
         <div class="col-3" style="text-align: left;">
             <img style="height: 44px;padding: 5px;" src="../../../assets/zeellogo.png">
         </div>
@@ -23,24 +23,30 @@
             <li class="upper-links dropdown" style="border: none;padding-right: 15px;"><button routerLink="/products"
                     style="border: none;">Men</button>
                 <ul class="dropdown-menu">
-                    <li class="profile-li"><a class="profile-links" style="font-size: large;" routerLink="/products">Rainwear</a></li>
-                    <li class="profile-li"><a class="profile-links" style="font-size: large;" routerLink="/products">Winterwear</a></li>
+                    <li class="profile-li"><a class="profile-links" style="font-size: large;"
+                            routerLink="/products">Rainwear</a></li>
+                    <li class="profile-li"><a class="profile-links" style="font-size: large;"
+                            routerLink="/products">Winterwear</a></li>
                 </ul>
             </li>
             <li class="upper-links dropdown" style="border: none;padding-right: 15px;"><button routerLink="/products"
                     style="border: none;">Women</button>
                 <ul class="dropdown-menu">
-                    <li class="profile-li"><a class="profile-links" style="font-size: large;" routerLink="/products">Rainwear</a></li>
-                    <li class="profile-li"><a class="profile-links" style="font-size: large;" routerLink="/products">Winterwear</a></li>
+                    <li class="profile-li"><a class="profile-links" style="font-size: large;"
+                            routerLink="/products">Rainwear</a></li>
+                    <li class="profile-li"><a class="profile-links" style="font-size: large;"
+                            routerLink="/products">Winterwear</a></li>
                 </ul>
             </li>
             <li class="upper-links dropdown" style="border: none;padding-right: 15px;"><button routerLink="/products"
-                style="border: none;">Kids</button>
-            <ul class="dropdown-menu">
-                <li class="profile-li"><a class="profile-links" style="font-size: large;" routerLink="/products">Rainwear</a></li>
-                <li class="profile-li"><a class="profile-links" style="font-size: large;" routerLink="/products">Winterwear</a></li>
-            </ul>
-        </li>
+                    style="border: none;">Kids</button>
+                <ul class="dropdown-menu">
+                    <li class="profile-li"><a class="profile-links" style="font-size: large;"
+                            routerLink="/products">Rainwear</a></li>
+                    <li class="profile-li"><a class="profile-links" style="font-size: large;"
+                            routerLink="/products">Winterwear</a></li>
+                </ul>
+            </li>
             <!-- <button style="border: none;padding-right: 20px;">Men</button>
             <button style="border: none;padding-right: 20px;">Women</button>
             <button style="border: none;padding-right: 20px;">Kids</button> -->
@@ -113,12 +119,49 @@
 
 
 
-<div class="row justify-content-center" style="padding-top: 35px;padding-bottom: 35px;" *ngIf="searchrow">
+
+
+
+
+<div class="row justify-content-center" id="searchrow"  *ngIf="searchrow">
     <div class="search-btn">
         <div class="form-group has-search">
             <span class="fa fa-search form-control-feedback"></span>
-            <input type="text" class="form-control" placeholder="Search our store">
+            <input id="searchinput" type="text" class="form-control" placeholder="Search our store">
             <p class="" (click)="closeSeach()">Close</p>
         </div>
+    </div>
+</div>
+
+
+
+
+<div *ngIf="androidnavbar" id="androidnavbar" class="container-flex" style="background-color: rgb(246, 246, 246);">
+    <div class="container">
+        <span><app-androidnavpopup style="display: flex;float: left;margin-top: 5px;margin-right: 5px;"></app-androidnavpopup></span>
+        <!-- <svg (click)="openpopupnavbar()" xmlns="http://www.w3.org/2000/svg" width="30" style="margin-right: 4%;" height="30" fill="currentColor"
+            class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+        </svg> -->
+        <svg (click)="searchmodel()" xmlns="http://www.w3.org/2000/svg" width="26" style="margin-right: 16%;" height="26" fill="currentColor"
+            class="bi bi-search" viewBox="0 0 16 16">
+            <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+        </svg>
+        <img src="../../../assets/zeellogo.png" alt="" style="margin-right: 12%;width: 100px;">
+        <svg xmlns="http://www.w3.org/2000/svg" style="margin-right: 2%;" width="30" height="30" fill="currentColor" class="bi bi-cart"
+            viewBox="0 0 16 16">
+            <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg"  style="margin-right: 0px;" width="30" height="30" fill="currentColor" class="bi bi-person-circle"
+            viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+            <path fill-rule="evenodd"
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+        </svg>
+
+
     </div>
 </div>
