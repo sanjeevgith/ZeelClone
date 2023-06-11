@@ -29,3 +29,11 @@ img {
 
 
 
+@media only screen and (max-width: 600px) {
+  .card{
+    display: flex;
+    width: auto;
+  }
+
+ 
+}
