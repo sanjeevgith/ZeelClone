@@ -64,10 +64,6 @@ export class AndroidnavpopupComponent implements OnInit{
     (<HTMLInputElement>document.getElementById("backarrow")).style.display = "none";
     (<HTMLInputElement>document.getElementById("rowbodynext")).style.display = "none";
     (<HTMLInputElement>document.getElementById("rowbody")).style.display = "block";
-
-
-
-
   }
 
   

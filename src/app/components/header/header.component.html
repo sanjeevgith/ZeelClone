@@ -68,9 +68,9 @@
             <a class="nav-links" href="#">Contact</a>
             <a class="nav-links" href="#">Track Order</a> -->
         </div>
-        <div class="col-3" style="text-align: right;padding: 7px;">
+        <div class="col-3"  style="text-align: right;padding: 7px;display: flex;justify-content: right;">
 
-            <svg width="20" (click)="searchmodel()" height="20" style="margin-right: 10px;" viewBox="0 0 26 26"
+            <svg width="20" (click)="searchmodel()" height="20" style="margin-right: 10px;margin-top: 4px;" viewBox="0 0 26 26"
                 aria-hidden="true">
                 <g fill="none" fill-rule="evenodd">
                     <g transform="translate(1 1)" stroke="currentColor">
@@ -81,8 +81,8 @@
             </svg>
 
 
-            <span class="cart-link__label" style="font-size: small;color: rgb(123, 123, 123);">Cart</span>
-            <svg width="20px" routerLink="/cart" height="20px" viewBox="0 0 24 24" aria-hidden="true">
+            <span class="cart-link__label" style="font-size: small;color: rgb(123, 123, 123);padding-top: 4px;">Cart</span>
+            <!-- <svg width="20px" routerLink="/cart" height="20px" viewBox="0 0 24 24" aria-hidden="true">
                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                     <path
                         d="M3.5,2.75 C4.87766445,2.75 5.56649668,2.75 5.56649668,2.75 C5.56649668,2.75 6.03257795,7.25 6.96474049,16.25 L19.5,16.25"
@@ -93,12 +93,13 @@
                     <circle stroke="currentColor" cx="8.875" cy="20.005" r="1.375"></circle>
                     <circle stroke="currentColor" cx="17.375" cy="20.005" r="1.375"></circle>
                 </g>
-            </svg>
+            </svg> -->
+            <span><app-shoppingcart></app-shoppingcart></span>
 
 
 
-            <a href="/login" id="customer_login_link" class="site-header__link site-header__cart"
-                style="padding:0 15px">
+            <a routerLink="/login" id="customer_login_link" class="site-header__link site-header__cart"
+                style="padding:0 15px;margin-top: 4px;">
                 <svg width="20" height="20" viewBox="0 0 26 26" aria-hidden="true">
                     <g fill="none" fill-rule="evenodd">
                         <path d="M.5.5h25v25H.5z"></path>
