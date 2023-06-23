@@ -6,6 +6,7 @@ import { AndroidnavpopupComponent } from './components/androidnavpopup/androidna
 import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { ShoppingcartComponent } from './components/shoppingcart/shoppingcart.component';
+import { SearchinputComponent } from './components/searchinput/searchinput.component';
 
 const routes: Routes = [
   {
@@ -36,6 +37,10 @@ const routes: Routes = [
   {
     path:"cart",
     component:ShoppingcartComponent
+  },
+  {
+    path:"searchinput",
+    component:SearchinputComponent
   }
 ];
 

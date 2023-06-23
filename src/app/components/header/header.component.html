@@ -68,10 +68,20 @@
             <a class="nav-links" href="#">Contact</a>
             <a class="nav-links" href="#">Track Order</a> -->
         </div>
-        <div class="col-3"  style="text-align: right;padding: 7px;display: flex;justify-content: right;">
+        <div class="col-3" style="text-align: right;padding: 7px;display: flex;justify-content: right;">
 
-            <svg width="20" (click)="searchmodel()" height="20" style="margin-right: 10px;margin-top: 4px;" viewBox="0 0 26 26"
+            <!-- <svg width="20" routerLink="/searchinput" (click)="searchmodel()" height="20" style="margin-right: 10px;margin-top: 4px;" viewBox="0 0 26 26"
                 aria-hidden="true">
+                <g fill="none" fill-rule="evenodd">
+                    <g transform="translate(1 1)" stroke="currentColor">
+                        <circle cx="10.364" cy="10.364" r="10.364"></circle>
+                        <path stroke-linecap="square" d="m18 18 5.777 5.788"></path>
+                    </g>
+                </g>
+            </svg> -->
+
+            <svg width="20" routerLink="/searchinput" height="20" style="margin-right: 10px;margin-top: 4px;"
+                viewBox="0 0 26 26" aria-hidden="true">
                 <g fill="none" fill-rule="evenodd">
                     <g transform="translate(1 1)" stroke="currentColor">
                         <circle cx="10.364" cy="10.364" r="10.364"></circle>
@@ -81,7 +91,8 @@
             </svg>
 
 
-            <span class="cart-link__label" style="font-size: small;color: rgb(123, 123, 123);padding-top: 4px;">Cart</span>
+            <span class="cart-link__label"
+                style="font-size: small;color: rgb(123, 123, 123);padding-top: 4px;">Cart</span>
             <!-- <svg width="20px" routerLink="/cart" height="20px" viewBox="0 0 24 24" aria-hidden="true">
                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                     <path
@@ -124,7 +135,7 @@
 
 
 
-<div class="row justify-content-center" id="searchrow"  *ngIf="searchrow">
+<!-- <div class="row justify-content-center" id="searchrow"  *ngIf="searchrow">
     <div class="search-btn">
         <div class="form-group has-search">
             <span class="fa fa-search form-control-feedback"></span>
@@ -132,32 +143,38 @@
             <p class="" (click)="closeSeach()">Close</p>
         </div>
     </div>
-</div>
+</div> -->
 
 
 
 
 <div *ngIf="androidnavbar" id="androidnavbar" class="container-flex" style="background-color: rgb(246, 246, 246);">
     <div class="container">
-        <span><app-androidnavpopup style="display: flex;float: left;margin-top: 5px;margin-right: 5px;"></app-androidnavpopup></span>
+        <span><app-androidnavpopup
+                style="display: flex;float: left;margin-top: 5px;margin-right: 5px;"></app-androidnavpopup></span>
         <!-- <svg (click)="openpopupnavbar()" xmlns="http://www.w3.org/2000/svg" width="30" style="margin-right: 4%;" height="30" fill="currentColor"
             class="bi bi-list" viewBox="0 0 16 16">
             <path fill-rule="evenodd"
                 d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
         </svg> -->
-        <svg (click)="searchmodel()" xmlns="http://www.w3.org/2000/svg" width="26" style="margin-right: 16%;" height="26" fill="currentColor"
-            class="bi bi-search" viewBox="0 0 16 16">
+        <!-- <svg routerLink="/searchinput" (click)="searchmodel()" xmlns="http://www.w3.org/2000/svg" width="26" style="margin-right: 16%;"
+            height="26" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+        </svg> -->
+        <svg routerLink="/searchinput" xmlns="http://www.w3.org/2000/svg" width="26" style="margin-right: 16%;"
+            height="26" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
             <path
                 d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
         </svg>
         <img src="../../../assets/zeellogo.png" routerLink="/dashboard" alt="" style="margin-right: 12%;width: 100px;">
-        <svg xmlns="http://www.w3.org/2000/svg" routerLink="/cart" style="margin-right: 2%;" width="30" height="30" fill="currentColor" class="bi bi-cart"
-            viewBox="0 0 16 16">
+        <svg xmlns="http://www.w3.org/2000/svg" routerLink="/cart" style="margin-right: 2%;" width="30" height="30"
+            fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
             <path
                 d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
         </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" routerLink="/login"  style="margin-right: 0px;" width="30" height="30" fill="currentColor" class="bi bi-person-circle"
-            viewBox="0 0 16 16">
+        <svg xmlns="http://www.w3.org/2000/svg" routerLink="/login" style="margin-right: 0px;" width="30" height="30"
+            fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
             <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
             <path fill-rule="evenodd"
                 d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />

@@ -1,0 +1,45 @@
+
+
+#searchrow{
+    margin: 60px;
+}
+
+
+.search-btn {
+    width: 35%;
+  }
+
+
+  .form-control {
+    padding-left: 2.375rem;
+    border: 1px solid;
+    border-radius: 2px;
+  }
+  .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+  }
+  
+  :hover .nav-btn {
+    background-color: rgb(223, 222, 222);
+  }
+
+
+
+
+  @media only screen and (max-width: 600px) {
+    .search-btn {
+        width: 90%;
+      }
+      #searchrow{
+        margin-top: 60px;
+      }
+
+  }
