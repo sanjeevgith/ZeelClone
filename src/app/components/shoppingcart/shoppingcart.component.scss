@@ -39,11 +39,11 @@
   .popup-popupEmail .content {
     // position: fixed;
     top: 2%;
-    left: 1%;
+    left: -23%;
     transform: none;
     background: #fff;
-    width: 67%;
-    height: 95%;
+    width: 89%;
+    height: 93%;
     z-index: 10;
     text-align: start;
     padding: 10px;
@@ -53,7 +53,7 @@
     transition-timing-function: step-end;
   }
 
-  .popup-popupEmail.active .overlay {
+  .popup-popupEmail.active {
     display: block;
     transition-timing-function: step-end;
   }
@@ -63,4 +63,5 @@
     height: 30px;
     margin-top: 7px;
   }
+  
 }

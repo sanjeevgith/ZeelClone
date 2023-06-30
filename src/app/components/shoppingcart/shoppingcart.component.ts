@@ -10,7 +10,8 @@ export class ShoppingcartComponent implements OnInit {
 
 
   ngOnInit(): void {
-    (<HTMLInputElement>document.getElementById("popupEmail")).style.display = "none";
+   (<HTMLInputElement>document.getElementById("popupEmail")).style.display = "none";
+
   }
 
 
@@ -18,14 +19,12 @@ export class ShoppingcartComponent implements OnInit {
 
   loginPopup() {
     (<HTMLInputElement>document.getElementById("popupEmail")).classList.toggle("active");
-    (<HTMLInputElement>document.getElementById("popupEmail")).style.display = "block";
+    // (<HTMLInputElement>document.getElementById("popupEmail")).style.display = "block";
     }
 
   closePopup() {
-    
     (<HTMLInputElement>document.getElementById("popupEmail")).classList.toggle("active");
-    (<HTMLInputElement>document.getElementById("popupEmail")).classList.toggle("hidden");
-    (<HTMLInputElement>document.getElementById("popupEmail")).style.display = "none";
+    // (<HTMLInputElement>document.getElementById("popupEmail")).style.display = "none";
 
 
   }
