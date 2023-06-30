@@ -1,5 +1,4 @@
-
-<svg width="20px"  (click)="loginPopup()" height="20px" viewBox="0 0 24 24" aria-hidden="true">
+<svg  class="cartpopup" (click)="loginPopup()"  viewBox="0 0 24 24" aria-hidden="true">
     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <path
             d="M3.5,2.75 C4.87766445,2.75 5.56649668,2.75 5.56649668,2.75 C5.56649668,2.75 6.03257795,7.25 6.96474049,16.25 L19.5,16.25"
@@ -16,12 +15,46 @@
 
 
 
-    <div class="popup-popupEmail" id="popupEmail">
-        <div class="content">
-            <span style="padding-left: 97%;border: none;">
-                <button style="border: none;background-color: white;" type="button" (click)="closePopup()"><span
-                        style="color: rgb(74, 170, 218);">&times;</span></button>
-            </span>
+<div class="popup-popupEmail" id="popupEmail" >
+    <div class="content">
+        <span style="padding-left: 92%;border: none;" (click)="closePopup()">
+            <button style="border: none;background-color: rgb(230, 229, 229);" type="button"
+                (click)="closePopup()"><span  (click)="closePopup()" style="color: rgb(115, 115, 115);">&times;</span></button>
+        </span>
+
+        <div class="row" style="margin-top: -12px;">
+            <div>
+                <h4><b style="font-family: sans-serif;margin-left: 15px;">SHOPPING CART</b></h4>
+            </div><br><br>
+            <p style="text-align: center;font-size: small;">Your cart is currently empty.</p>
+        </div>
+
+        <div class="row" style="border-top: 1px solid;color: rgb(184, 184, 184);margin-top: 30%;">
+            <div style="margin-top: 20px;">
+                <h4 style="display: flex; justify-content: space-between;">
+                    <b style="color: black;">SUBTOTAL:</b>
+                    <span> <b style="color: black;">RS. 959.00</b></span>
+                </h4>
+            </div>
+            <div>
+                <p style="font-size: small;color: rgb(133, 133, 133);">Tax included. Shipping calculated at checkout.
+                </p>
+                <p style="font-size: small;color: rgb(92, 92, 92);">Add a note to your order</p>
+            </div>
+            <div>
+                <button
+                    style="padding-left: 30px;background-color: #56d3d9;border: none;padding-right: 30px;padding-top: 10px;padding-bottom: 10px;"><span
+                        style="color: aliceblue;">View my Cart</span></button>
+            </div>
+            <div style="margin-top: 13px;">
+                <div style="margin-bottom: -12px;position: relative;margin-left: 10px;">
+                    <span style="color: black; background-color: #53ff73;font-size: xx-small;border-radius: 5px;">Extra
+                        10% Off on Prepaid Orders </span>
+                </div>
+                <button
+                    style="width: 100%;border: none;background-color: #56d3d9;padding-top: 10px;padding-bottom: 10px;"><b
+                        style="color: aliceblue;">BUY NOW</b></button>
+            </div>
         </div>
     </div>
-
+</div>
